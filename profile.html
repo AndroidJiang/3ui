@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐月母婴积分商城 - 我的</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <div>14:43</div>
+        <div>
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi ml-1"></i>
+            <i class="fas fa-battery-full ml-1"></i>
+        </div>
+    </div>
+
+    <!-- 页面头部 -->
+    <div class="page-header">
+        乐月母婴积分商城
+    </div>
+
+    <div class="page-container">
+        <!-- 用户信息头部 -->
+        <div class="profile-header">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80" alt="用户头像" class="avatar">
+            <div class="user-info">
+                <h2>乐月妈妈</h2>
+                <div class="points-display">积分 5000</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- 功能菜单列表 -->
+            <div class="menu-list">
+                <!-- 兑换订单 -->
+                <div class="menu-item">
+                    <div class="menu-item-left">
+                        <div class="menu-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <span class="menu-title">兑换订单</span>
+                    </div>
+                    <i class="fas fa-chevron-right menu-arrow"></i>
+                </div>
+                
+                <!-- 联系客服 -->
+                <div class="menu-item">
+                    <div class="menu-item-left">
+                        <div class="menu-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <span class="menu-title">联系客服</span>
+                    </div>
+                    <i class="fas fa-chevron-right menu-arrow"></i>
+                </div>
+                
+                <!-- 关于我们 -->
+                <div class="menu-item">
+                    <div class="menu-item-left">
+                        <div class="menu-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <span class="menu-title">关于我们</span>
+                    </div>
+                    <i class="fas fa-chevron-right menu-arrow"></i>
+                </div>
+                
+                <!-- 退出登录 -->
+                <div class="menu-item" onclick="location.href='login.html'">
+                    <div class="menu-item-left">
+                        <div class="menu-icon">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </div>
+                        <span class="menu-title">退出登录</span>
+                    </div>
+                    <i class="fas fa-chevron-right menu-arrow"></i>
+                </div>
+            </div>
+            
+            <!-- 版本信息 -->
+            <div class="version-info">
+                版本 1.0.0
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="tab-bar">
+            <a href="home.html" class="tab-item">
+                <i class="fas fa-home tab-icon"></i>
+                <span>首页</span>
+            </a>
+            <a href="profile.html" class="tab-item active">
+                <i class="fas fa-user tab-icon"></i>
+                <span>我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html> 

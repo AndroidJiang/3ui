@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐月母婴积分商城 - 所有页面</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .page-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .views-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+        .flow-section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .flow-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #b7286c;
+            border-bottom: 2px solid #f3d5e2;
+            padding-bottom: 10px;
+        }
+        
+        .flow-description {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        
+        .frames-container {
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            padding: 10px 0;
+            gap: 20px;
+        }
+        
+        .frame-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .frame-label {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        .phone-frame {
+            width: 375px;
+            height: 812px;
+            border: 12px solid #111;
+            border-radius: 36px;
+            overflow: hidden;
+            position: relative;
+            background: #fff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .phone-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .arrow {
+            font-size: 24px;
+            color: #b7286c;
+        }
+        
+        .project-info {
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .project-info h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .project-info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .features-list {
+            margin-top: 15px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+        
+        .feature-icon {
+            color: #b7286c;
+            margin-right: 10px;
+        }
+        
+        /* 兑换成功弹窗效果展示 */
+        .phone-frame-with-modal {
+            position: relative;
+        }
+        
+        .modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        
+        .success-indicator {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 12px;
+            z-index: 11;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-title text-3xl font-bold text-gray-800">乐月母婴积分商城 - 所有页面</h1>
+    
+    <div class="views-container">
+        <!-- 登录流程 -->
+        <section class="flow-section">
+            <h2 class="flow-title">登录流程</h2>
+            <p class="flow-description">
+                用户可通过登录页面以微信授权或手机号方式登录小程序。
+            </p>
+            
+            <div class="frames-container">
+                <div class="frame-wrap">
+                    <div class="phone-frame">
+                        <iframe src="login.html"></iframe>
+                    </div>
+                    <div class="frame-label">登录页面</div>
+                </div>
+                
+                <div class="arrow">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                
+                <div class="frame-wrap">
+                    <div class="phone-frame">
+                        <iframe src="home.html"></iframe>
+                    </div>
+                    <div class="frame-label">首页</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 浏览与兑换流程 -->
+        <section class="flow-section">
+            <h2 class="flow-title">浏览与兑换流程</h2>
+            <p class="flow-description">
+                用户可以在首页浏览可兑换商品，点击兑换按钮进入填写表单页面，完成兑换后显示成功弹窗。
+            </p>
+            
+            <div class="frames-container">
+                <div class="frame-wrap">
+                    <div class="phone-frame">
+                        <iframe src="home.html"></iframe>
+                    </div>
+                    <div class="frame-label">首页</div>
+                </div>
+                
+                <div class="arrow">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                
+                <div class="frame-wrap">
+                    <div class="phone-frame">
+                        <iframe src="exchange.html"></iframe>
+                    </div>
+                    <div class="frame-label">确认兑换</div>
+                </div>
+                
+                <div class="arrow">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                
+                <div class="frame-wrap">
+                    <div class="phone-frame phone-frame-with-modal">
+                        <iframe src="exchange.html"></iframe>
+                        <div class="modal-overlay">
+                            <div style="background-color: white; width: 85%; max-width: 300px; border-radius: 12px; padding: 30px 20px; text-align: center;">
+                                <div style="font-size: 60px; color: #4CAF50; margin-bottom: 20px;">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <h2 style="font-size: 20px; font-weight: 600; margin-bottom: 10px; color: #333;">兑换成功</h2>
+                                <p style="color: #666; margin-bottom: 25px; font-size: 15px; line-height: 1.5;">您的订单已提交，我们将尽快为您发货</p>
+                                <button style="background-color: #b7286c; color: white; border: none; border-radius: 25px; padding: 12px 0; font-size: 16px; width: 80%;">返回首页</button>
+                            </div>
+                        </div>
+                        <div class="success-indicator">显示弹窗</div>
+                    </div>
+                    <div class="frame-label">兑换成功弹窗</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 个人中心流程 -->
+        <section class="flow-section">
+            <h2 class="flow-title">个人中心流程</h2>
+            <p class="flow-description">
+                用户可查看个人积分信息，兑换订单，以及管理个人资料和联系客服。
+            </p>
+            
+            <div class="frames-container">
+                <div class="frame-wrap">
+                    <div class="phone-frame">
+                        <iframe src="profile.html"></iframe>
+                    </div>
+                    <div class="frame-label">个人中心</div>
+                </div>
+                
+                <div class="arrow">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                
+                <div class="frame-wrap">
+                    <div class="phone-frame">
+                        <iframe src="login.html"></iframe>
+                    </div>
+                    <div class="frame-label">退出登录</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- 项目说明 -->
+    <div class="project-info">
+        <h2>乐月母婴积分商城 - 项目说明</h2>
+        <p>
+            本项目是一个母婴品牌会员积分兑换小程序原型，专为母婴门店会员提供积分查询与兑换功能。
+            通过这一平台，会员可以使用日常消费所积累的积分兑换各种母婴优质商品。
+        </p>
+        
+        <div class="features-list">
+            <div class="feature-item">
+                <i class="fas fa-check-circle feature-icon"></i>
+                <span>微信一键登录/手机号登录</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check-circle feature-icon"></i>
+                <span>积分余额查询</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check-circle feature-icon"></i>
+                <span>多样化母婴产品兑换</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check-circle feature-icon"></i>
+                <span>兑换订单管理</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check-circle feature-icon"></i>
+                <span>在线客服咨询</span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 确保页面加载后展示弹窗效果
+        document.addEventListener('DOMContentLoaded', function() {
+            // 已在HTML中直接设置弹窗显示
+        });
+    </script>
+</body>
+</html> 

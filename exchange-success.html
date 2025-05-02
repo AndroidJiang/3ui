@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐月母婴积分商城 - 兑换成功</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <div>14:43</div>
+        <div>
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi ml-1"></i>
+            <i class="fas fa-battery-full ml-1"></i>
+        </div>
+    </div>
+
+    <!-- 页面头部 -->
+    <div class="page-header with-back-btn">
+        <i class="fas fa-arrow-left back-btn" onclick="history.back()"></i>
+        确认兑换
+    </div>
+
+    <div class="page-container">
+        <!-- 产品信息 -->
+        <div class="product-exchange-card">
+            <div class="product-image-container">
+                <img src="https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309643.jpg" class="product-image" alt="高端婴儿配方奶粉">
+            </div>
+            <div class="product-info">
+                <div class="product-name" id="productName">高端婴儿配方奶粉</div>
+                <div class="product-points" id="productPoints">2000积分</div>
+            </div>
+        </div>
+
+        <!-- 收货信息 -->
+        <div class="shipping-info">
+            <h3 class="section-title">收货信息</h3>
+            <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" id="name" class="form-input" value="张三" readonly>
+            </div>
+            <div class="form-group">
+                <label for="phone">手机号</label>
+                <input type="tel" id="phone" class="form-input" value="13812345678" readonly>
+            </div>
+            <div class="form-group">
+                <label for="address">地址</label>
+                <textarea id="address" class="form-textarea" readonly>上海市浦东新区张江高科技园区博云路2号</textarea>
+            </div>
+        </div>
+
+        <!-- 兑换结果状态 -->
+        <div class="success-status">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2 class="success-title">兑换成功</h2>
+            <p class="success-message">您的订单已提交，我们将尽快为您发货</p>
+        </div>
+
+        <!-- 返回首页按钮 -->
+        <div class="confirm-btn-container">
+            <button class="confirm-btn" onclick="location.href='home.html'">返回首页</button>
+        </div>
+    </div>
+
+    <script>
+        // 获取URL参数
+        function getUrlParams() {
+            const params = {};
+            const queryString = window.location.search.substring(1);
+            const pairs = queryString.split('&');
+            
+            for (const pair of pairs) {
+                const [key, value] = pair.split('=');
+                params[key] = decodeURIComponent(value || '');
+            }
+            
+            return params;
+        }
+
+        // 页面加载完成后
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取URL参数
+            const params = getUrlParams();
+            
+            // 如果有产品名参数，则更新产品名称
+            if (params.product) {
+                document.getElementById('productName').textContent = params.product;
+            }
+            
+            // 如果有积分参数，则更新积分
+            if (params.points) {
+                document.getElementById('productPoints').textContent = params.points + '积分';
+            }
+        });
+    </script>
+</body>
+</html> 

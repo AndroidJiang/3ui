@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐月母婴积分商城</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <div>14:42</div>
+        <div>
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi ml-1"></i>
+            <i class="fas fa-battery-full ml-1"></i>
+        </div>
+    </div>
+
+    <!-- 页面头部 -->
+    <div class="page-header">
+        乐月母婴积分商城
+    </div>
+
+    <div class="page-container">
+        <div class="main-content">
+            <!-- 欢迎横幅 -->
+            <div class="welcome-banner">
+                <img src="https://images.unsplash.com/photo-1601839430100-7cca5255da92?ixlib=rb-1.2.1&auto=format&fit=crop&w=80&h=80&q=80" alt="乐月母婴" class="welcome-logo">
+                <div>
+                    <div class="welcome-text">欢迎您，乐月妈妈</div>
+                </div>
+            </div>
+
+            <!-- 热门推荐 -->
+            <div class="section-title">热门推荐</div>
+            <div class="product-grid">
+                <!-- 商品1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1631205160183-3648e3f0ebee?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="高端婴儿配方奶粉" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">高端婴儿配方奶粉</h3>
+                        <p class="product-points">2000 积分</p>
+                        <button class="exchange-btn" onclick="location.href='exchange.html?product=高端婴儿配方奶粉&points=2000'">兑换</button>
+                    </div>
+                </div>
+
+                <!-- 商品2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="婴儿纸尿裤" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">婴儿纸尿裤</h3>
+                        <p class="product-points">1500 积分</p>
+                        <button class="exchange-btn" onclick="location.href='exchange.html?product=婴儿纸尿裤&points=1500'">兑换</button>
+                    </div>
+                </div>
+
+                <!-- 商品3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="益智早教玩具" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">益智早教玩具</h3>
+                        <p class="product-points">1200 积分</p>
+                        <button class="exchange-btn" onclick="location.href='exchange.html?product=益智早教玩具&points=1200'">兑换</button>
+                    </div>
+                </div>
+
+                <!-- 商品4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1594612076394-e433888201c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="婴儿保温奶瓶" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">婴儿保温奶瓶</h3>
+                        <p class="product-points">800 积分</p>
+                        <button class="exchange-btn" onclick="location.href='exchange.html?product=婴儿保温奶瓶&points=800'">兑换</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="tab-bar">
+            <a href="home.html" class="tab-item active">
+                <i class="fas fa-home tab-icon"></i>
+                <span>首页</span>
+            </a>
+            <a href="profile.html" class="tab-item">
+                <i class="fas fa-user tab-icon"></i>
+                <span>我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html> 
